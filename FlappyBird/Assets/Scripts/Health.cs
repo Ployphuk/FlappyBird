@@ -28,7 +28,7 @@ public class Health : MonoBehaviour
             
            FindObjectOfType<GameManeger>().GameOver();
            currentHealth = 10;
-          healthText.text = "Health: " + currentHealth.ToString();
+           healthText.text = "Health: " + currentHealth.ToString();
            
 
         }

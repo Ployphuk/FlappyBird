@@ -18,6 +18,7 @@ public class GameManeger : MonoBehaviour{
     }
     public void Play(){
         
+        
         playButton.SetActive(false);
         gameover.SetActive(false);
 
