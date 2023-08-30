@@ -27,7 +27,7 @@ public class Health : MonoBehaviour
         {   
             
            FindObjectOfType<GameManeger>().GameOver();
-           currentHealth = 10;
+           currentHealth = 3;
            healthText.text = "Health: " + currentHealth.ToString();
            
 
@@ -41,9 +41,9 @@ public class Health : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision){
         if(collision.tag == "Obstacle"){
-            TakeDamage(2);
+            TakeDamage(1);
         }else if(collision.tag == "Ground"){
-            TakeDamage(10);
+            TakeDamage(3);
         }
     }
     
